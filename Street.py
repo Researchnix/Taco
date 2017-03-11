@@ -11,6 +11,10 @@ import Car.Car
 class Street:
     ID = ""
     length = 10
+    carAmount = 0
+    percentFilled = 0.0
+    flexQueue = []
+    standingQueue = []
 
 
 
@@ -21,11 +25,15 @@ class Street:
 
 
     def queueCar(self, Car c):
-
+        if carAmount >= length
+            print "Street " + ID + " is already full"
     def dequeueCar(self):
 
+    def update(self):
 
-    def getCarNumber(self):
+
+
+    def getCarAmount(self):
 
 
 
