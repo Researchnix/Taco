@@ -1,8 +1,8 @@
 #
 #  main.py
-#  HackThe6ix
+#  Taco  ---  SPH Innovation Challenge
 #
-#  Created by Jeffrey, Maliha, Justin  and Lennart on 2016-08-06.
+#  Created by Mat, Kon and Len on 2017-03-11.
 #  Copyright 2016 Researchnix. All rights reserved.
 #
 
