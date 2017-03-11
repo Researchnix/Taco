@@ -7,14 +7,15 @@
 #
 
 import Car.Car
+import collections
 
 class Street:
     ID = ""
     length = 10
     carAmount = 0
     percentFilled = 0.0
-    flexQueue = []
-    standingQueue = []
+    flexQueue = collections.deque([])
+    standingQueue = collections.deque([])
 
 
 
@@ -25,10 +26,14 @@ class Street:
 
 
     def queueCar(self, c):
-        if carAmount >= length:
-            print "Street " + ID + " is already full"
+        if self.carAmount >= self.length:
+            return False
         else:
-            flexQueue.append(c)
+            self.flexQueue.append(c)
+
+            self.carAmount += 1
+            return True
+
 
     def dequeueCar(self):
 
