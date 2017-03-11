@@ -9,12 +9,6 @@
 import sys
 import time
 
-import Painter
-import RandomGenerator
-#import visualization
-from math import *
-
-
 
 if __name__ == "__main__":
     t = time.time()
