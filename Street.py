@@ -24,9 +24,12 @@ class Street:
 
 
 
-    def queueCar(self, Car c):
-        if carAmount >= length
+    def queueCar(self, c):
+        if carAmount >= length:
             print "Street " + ID + " is already full"
+        else:
+            flexQueue.append(c)
+
     def dequeueCar(self):
 
     def update(self):
