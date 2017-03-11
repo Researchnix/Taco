@@ -39,8 +39,8 @@ export default {
 	},
 	resolve:   {
 		extensions: ['.js', '.jsx', '.json'],
-		mainFields: ['browser', 'web', 'main'],
-		// mainFields: ['webpack', 'browser', 'web', 'browserify', ['jam', 'main'], 'main'],
+		// mainFields: ['browser', 'web', 'main'],
+		mainFields: ['webpack', 'browser', 'web', 'browserify', ['jam', 'main'], 'main'],
 		alias: {
 			'app': path.join(__dirname, '..', 'app')
 		}

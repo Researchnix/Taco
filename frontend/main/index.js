@@ -1,6 +1,7 @@
-import {app, BrowserWindow, ipcMain, session} from 'electron'
+import {app, BrowserWindow, ipcMain} from 'electron'
 import Promise from 'bluebird'
 import configureTemplate from './configureTemplate'
+import {API} from './API'
 // import getToken from './getToken'
 // import getId from './getId'
 // import {TinderApi} from './tinderApi'
@@ -50,26 +51,6 @@ function reload(win) {
 	}
 }
 
-async function logout(win) {
-	console.log('logging out', win);
-	// const ses = session.defaultSession;
-	const {session} = win.webContents;
-	console.log('session', session);
-	console.log('clearCache', session.clearCache);
-	await Promise.fromCallback(callback => session.clearCache(callback));
-	console.log('clearStorageData', session.clearStorageData);
-	await Promise.fromCallback(callback => session.clearStorageData({}, callback));
-	// console.log('clearAuthCache');
-	// await Promise.fromCallback(callback => session.clearAuthCache);
-	// await Promise.all([
-	// 	Promise.fromCallback(ses.clearCache),
-	// 	Promise.fromCallback(ses.clearStorageData),
-	// 	Promise.fromCallback(ses.clearAuthCache)
-	// ]);
-	console.log('reloading window');
-	reload(win);
-}
-
 app.on('ready', async () => {
 	await installExtensions();
 
@@ -92,6 +73,7 @@ app.on('ready', async () => {
 	// ipcMain.on(TINDER_API, tinderApi.handleRequest);
 	// ipcMain.on(SHOW_NOTIFICATION, showNotification)
 	//
+	const api = new API(mainWindow.webContents);
 	reload(mainWindow);
 
 	mainWindow.webContents.on('did-finish-load', () => {
