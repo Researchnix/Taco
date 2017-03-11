@@ -22,3 +22,8 @@ class TrafficLight:
         return True
 
 
+    # Another dummt functio
+    def update(self, time):
+        pass
+
+
