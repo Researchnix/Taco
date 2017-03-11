@@ -19,20 +19,6 @@ from math import *
 if __name__ == "__main__":
     t = time.time()
 
-    # Initialize the Master and check its state
-    #mas = Master.Master()
-    #mas.printState()
-    #mas.run()
-    #visualization.visualization()
-
-    '''
-    rage = RandomGenerator.RandomGenerator()
-    rage.generateInter(30)
-    rage.writeToFile()
-    '''
-    pain = Painter.Painter()
-    pain.mainloop()
-
 
 
     print "\n\nDone in " + str(time.time() - t) + " s"
