@@ -15,9 +15,10 @@ class FourWay:
     ID = ""
     xPos = 0
     yPos = 0
-    incoming = {}
-    outgoing = {}
-    waitingCars =
+    incoming = []
+    outgoing = []
+    waitingCars = {}
+    queueSize = 5       # Number of cars that can wait in each queue
     trali = TrafficLight.TrafficLight()
     
     def __init__ (self, ID, x, y):
@@ -28,12 +29,16 @@ class FourWay:
     # Attach a new street as incoming
     def attachInStreet(self, s):
         self.incoming.append(s)
+        for a in self.waitingCars.values():
+            a[s.ID] = collections.deque([])
 
 
     # Attach a new street as outgoing
     def attachOutStreet(self, s):
         self.outgoing.append(s)
-
+        self.waitingCars[s.ID] = {}
+        for u in self.incoming:
+            self.waitingCars[s.ID][u.ID] = collections.deque([])
 
     # Do a time step, which means:
     #       Update traffic lights
@@ -45,5 +50,9 @@ class FourWay:
 
         # Ask streets to dequeue cars
         for s in streets:
-
+            newCar = s.inspectCar()
+            if newCar != None:
+                if len(self.waitingCars[newCar.nextStreet(), s.ID]) <= self.queueSize:
+                    self.waitingCars[newCar.nextStreet(), s.ID].append(s.dequeueCar())
          
+
