@@ -1,5 +1,5 @@
 #
-#  Map.py
+#  Car.py
 #  Taco  ---  SPH Innovation Challenge
 #
 #  Created by Mat, Kon and Len on 2017-03-11.
