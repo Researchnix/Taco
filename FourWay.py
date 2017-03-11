@@ -48,6 +48,12 @@ class FourWay:
         self.trali.update(time) # Only a dummy for now
         
 
+        # Try to queue cars in streets
+        # It depends 
+        for s in self.outgoing:
+
+
+
         # Ask streets to dequeue cars
         for s in streets:
             newCar = s.inspectCar()
