@@ -28,6 +28,9 @@ class Intersection:
 
 
     # Attach a new street as outgoing
-    def attachInStreet(self, s):
-        self.incoming.append(s)
+    def attachOutStreet(self, s):
+        self.outgoing.append(s)
+
+
+        
 
