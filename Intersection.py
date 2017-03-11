@@ -6,6 +6,8 @@
 #  Copyright 2016 Researchnix. All rights reserved.
 #
 
+import Street
+
 class Intersection:
     ID = ""
     xPos = 0
@@ -21,5 +23,11 @@ class Intersection:
 
 
     # Attach a new street as incoming
-    def attachInStreet(self, s)
-        incoming
+    def attachInStreet(self, s):
+        self.incoming.append(s)
+
+
+    # Attach a new street as outgoing
+    def attachInStreet(self, s):
+        self.incoming.append(s)
+
