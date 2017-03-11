@@ -9,7 +9,23 @@
 import Car.Car
 
 class Street:
+    ID = ""
+    length = 10
 
 
 
-    def queueCar(self, Car c)
+    def __init__ (self, ID, length):
+        self.ID = ID
+        self.length = length
+
+
+
+    def queueCar(self, Car c):
+
+    def dequeueCar(self):
+
+
+    def getCarNumber(self):
+
+
+
