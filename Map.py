@@ -22,7 +22,8 @@ class Map:
         f = open(fileInter, 'r')
         for line in f:
             line = line.split()
-            self.intersections[line[0]] = Intersection.Intersection(line[0], int(line[1], int(line[2])))
+            self.intersections[line[0]] = Intersection.Intersection(line[0], int(line[1]), int(line[2]))
+        f.close()
         f = open(fileStreets, 'r')
         for line in f:
             line = line.split()
