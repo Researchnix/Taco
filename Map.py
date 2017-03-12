@@ -26,8 +26,14 @@ class Map:
         for line in f:
             line = line.split()
             newst = Street.Street(line[0], line[1], line[2], line[3])
-            self.streets[line[0]] = Street.Street(newst)
+            self.streets[line[0]] = newst
             self.intersections[line[2]].addOutgoing(newst)
             self.intersections[line[3]].addIncoming(newst)
         f.close()
 
+    # Spawns the passed car on the specified street, returns true if successful, false if not
+    def spawnCar(self, streetID, car):
+        return self.streets.get(streetID, False).queueCar(car)
+
+    # Spawns a car with random route at a random street
+    def spawnRandomCar(self):
