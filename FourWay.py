@@ -25,21 +25,21 @@ class FourWay:
         self.ID = ID
         self.xPos = x
         self.yPos = y
-        trali = TrafficLight.TrafficLight(4,4)
 
+    # Initialize this traffic light only after all streets are attached to this intersection
     def initializeTrafficLight(self):
-        pass
+        trali = TrafficLight.TrafficLight(self.incoming, self.outgoing)
 
 
     # Attach a new street as incoming
-    def attachInStreet(self, s):
+    def addIncoming(self, s):
         self.incoming.append(s)
         for a in self.waitingCars.values():
             a[s.ID] = collections.deque([])
 
 
     # Attach a new street as outgoing
-    def attachOutStreet(self, s):
+    def addOutgoing(self, s):
         self.outgoing.append(s)
         self.waitingCars[s.ID] = {}
         for u in self.incoming:
@@ -54,17 +54,24 @@ class FourWay:
         
 
         # Try to queue cars in streets
-        # It depends 
-        for s in self.outgoing:
-            pass
+        # It depends on the traffic light state
+        for o in self.outgoing:
+            for i in self.incoming:
+                if trali.pathAllowed(o.ID, i.ID) and len(self.waitingCars[o.ID][i.ID]) != 0:
+                    car = self.waitingCars[o.ID][i.ID].pop()
+                    if not o.queueCar(car):
+                        self.waitingCars[o.ID][i.ID].appendleft(car)
+                        
+                    
 
 
 
-        # Ask streets to dequeue cars
-        for s in streets:
-            newCar = s.inspectCar()
-            if newCar != None:
-                if len(self.waitingCars[newCar.nextStreet(), s.ID]) <= self.queueSize:
-                    self.waitingCars[newCar.nextStreet(), s.ID].append(s.dequeueCar())
+        # Ask streets to dequeue a car, if there is space in the specific queue
+        # for this incoming street
+        for s in self.incoming:
+            if max([len(x[s.ID]) for x in self.waitingCars]) <= self.queueSize:
+                newCar = s.dequeueCar()
+                if newCar != None:
+                    self.waitingCars[newCar.nextStreet(), s.ID].append(newCar)
          
 

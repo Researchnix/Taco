@@ -9,6 +9,7 @@
 import sys
 import time
 import FourWay
+import Car
 
 
 if __name__ == "__main__":
@@ -16,5 +17,7 @@ if __name__ == "__main__":
 
 
     f = FourWay.FourWay("id", 1, 2)
+    car = Car.Car("a", 1,2,3)
+    r = Street(
 
     print "\n\nDone in " + str(time.time() - t) + " s"
