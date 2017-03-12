@@ -17,7 +17,7 @@ class RandomRoute():
         skeylist = self.graph.streets.keys()
         first = self.graph.streets[skeylist[randint(0, len(skeylist)-1)]]
         route.append(first.ID)
-        current = first.toID
+        current = self.graph.intersections[first.toID]
         for i in range(length):
             visited[current.ID] = True
             for j in range(len(current.outgoing)):
