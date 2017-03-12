@@ -27,6 +27,7 @@ class FourWay:
         self.yPos = y
         self.incoming = list([])
         self.outgoing = list([])
+        waitingCars = dict([])
 
     # Initialize this traffic light only after all streets are attached to this intersection
     def initializeTrafficLight(self):
