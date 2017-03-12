@@ -23,14 +23,16 @@ class Map:
         f = open(fileInter, 'r')
         for line in f:
             line = line.split()
-            self.intersections[line[0]] =FourWay.FourWay(line[0], int(line[1]), int(line[2]))
+            print line
+            print "adding the intersection ", line[0]
+            self.intersections[line[0]] = FourWay.FourWay(line[0], int(line[1]), int(line[2]))
         f.close()
         f = open(fileStreets, 'r')
         for line in f:
             line = line.split()
             newst = Street.Street(line[0], int(line[1]), line[2], line[3])
             self.streets[line[0]] = newst
-            #self.intersections[line[2]].addOutgoing(newst)
+            self.intersections[line[2]].addOutgoing(newst)
             self.intersections[line[3]].addIncoming(newst)
         f.close()
         print "all done!"
