@@ -28,11 +28,9 @@ class Map:
         f = open(fileStreets, 'r')
         for line in f:
             line = line.split()
-            if line.__len__() < 4:
-                break
             newst = Street.Street(line[0], int(line[1]), line[2], line[3])
             self.streets[line[0]] = newst
-            self.intersections[line[2]].addOutgoing(newst)
+            #self.intersections[line[2]].addOutgoing(newst)
             self.intersections[line[3]].addIncoming(newst)
         f.close()
         print "all done!"

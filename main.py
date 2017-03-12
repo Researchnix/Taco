@@ -25,8 +25,12 @@ if __name__ == "__main__":
 
     karte = Map.Map("test1_street", "test1_inter")
     print karte.streets
-    print karte.spawnCar(car) 
-    print karte.spawnRandomCar()
+    print "\n\n\n"
+    for i in karte.intersections.values():
+        for a in i.incoming:
+            pass
+            #print a.ID
+        print "\n\n"
 
 
     print "\n\nDone in " + str(time.time() - t) + " s"
