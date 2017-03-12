@@ -35,6 +35,8 @@ class Street:
         self.length = length
         self.fromID = fromID
         self.toID = toID
+        for i in range(length):
+            self.flexQueue.append(None)
 
     # Adds a Car at the end of the queue, returns true if successful, false if street is full
     def queueCar(self, c):
