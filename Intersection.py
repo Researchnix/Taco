@@ -23,12 +23,12 @@ class Intersection:
 
 
     # Attach a new street as incoming
-    def attachInStreet(self, s):
+    def addIncoming(self, s):
         self.incoming.append(s)
 
 
     # Attach a new street as outgoing
-    def attachOutStreet(self, s):
+    def addOutgoing(self, s):
         self.outgoing.append(s)
 
 

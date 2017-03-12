@@ -9,9 +9,15 @@
 import Car.Car
 import collections
 
+
 class Street:
+
     # Street ID
     ID = ""
+
+    # Neighbouring intersection IDs
+    fromID = ""
+    toID = ""
 
     # Street length determines time required to pass through the road, as well as its capacity
     length = 10
@@ -25,11 +31,11 @@ class Street:
     # The cars stack up in this queue after passing through the free section
     standingQueue = collections.deque([])
 
-
-
-    def __init__ (self, ID, length):
+    def __init__ (self, ID, length, *fromID, *toID):
         self.ID = ID
         self.length = length
+        self.fromID = fromID
+        self.toID = toID
 
     # Adds a Car at the end of the queue, returns true if successful, false if street is full
     def queueCar(self, c):
@@ -57,13 +63,12 @@ class Street:
         else:
             self.standingQueue.append(flexFirst)
 
-
-# Returns amount of cars currently on street
+    # Returns amount of cars currently on street
     def getCarAmount(self):
         return self.carAmount
 
-# Returns the ratio of cars on street/ street length
+    # Returns the ratio of cars on street/ street length
     def getPctFull(self):
-        return (float)(self.carAmount) / self.length
+        return float(self.carAmount) / self.length
 
 

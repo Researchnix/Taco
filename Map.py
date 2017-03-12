@@ -13,8 +13,10 @@ class Map:
     intersections = {}
     streets = {}
 
+    # Reads the specified files and initializes the graph.
+    # Intersection file format: ID, xPos, yPos
+    # Street file format: ID, length, from, to
     def __init__(self, fileStreets, fileInter):
-
         f = open(fileInter, 'r')
         for line in f:
             line = line.split()
@@ -22,6 +24,9 @@ class Map:
         f = open(fileStreets, 'r')
         for line in f:
             line = line.split()
-            self.streets[line[0]] = Street.Street()
-
+            newst = Street.Street(line[0], line[1], line[2], line[3])
+            self.streets[line[0]] = Street.Street(newst)
+            self.intersections[line[2]].addOutgoing(newst)
+            self.intersections[line[3]].addIncoming(newst)
+        f.close()
 
