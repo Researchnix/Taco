@@ -30,7 +30,7 @@ class Street:
     # The cars stack up in this queue after passing through the free section
     standingQueue = collections.deque([])
 
-    def __init__(self, ID, length, fromID, toID):
+    def __init__(self, ID, length, fromID = None, toID = None):
         self.ID = ID
         self.length = length
         self.fromID = fromID

@@ -5,7 +5,7 @@
 #  Created by Mat, Kon and Len on 2017-03-11.
 #  Copyright 2016 Researchnix. All rights reserved.
 #
-import Intersection
+import FourWay
 import Street
 import Car
 
@@ -22,7 +22,7 @@ class Map:
         f = open(fileInter, 'r')
         for line in f:
             line = line.split()
-            self.intersections[line[0]] = Intersection.Intersection(line[0], int(line[1]), int(line[2]))
+            self.intersections[line[0]] =FourWay.FourWay(line[0], int(line[1]), int(line[2]))
         f.close()
         f = open(fileStreets, 'r')
         for line in f:

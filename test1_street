@@ -1,35 +1,24 @@
 s12 3 i1 i2
 s21 3 i2 i1
-
 s23 7 i2 i3
 s32 7 i3 i2
-
 s14 2 i1 i4
 s41 2 i4 i1
-
 s25 6 i2 i5
 s52 6 i5 i2
-
 s36 2 i3 i6
 s63 2 i6 i3
-
 s45 7 i4 i5
 s54 7 i5 i4
-
 s56 3 i5 i6
 s65 3 i6 i5
-
 s47 5 i4 i7
 s74 5 i7 i4
-
 s58 1 i5 i8
 s85 1 i8 i5
-
 s69 9 i6 i9
 s96 9 i9 i6
-
 s78 8 i7 i8
 s87 8 i8 i7
-
 s89 11 i8 i9
 s98 11 i9 i8

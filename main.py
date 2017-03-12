@@ -10,6 +10,9 @@ import sys
 import time
 import FourWay
 import Car
+import Street
+import Map
+
 
 
 if __name__ == "__main__":
@@ -17,7 +20,12 @@ if __name__ == "__main__":
 
 
     f = FourWay.FourWay("id", 1, 2)
-    car = Car.Car("a", 1,2,3)
-    r = Street(
+    car = Car.Car("a", "s36", "s78", 3)
+    r = Street.Street("r", 10)
+
+    karte = Map.Map("test1_street", "test1_inter")
+    print karte.streets
+    #print karte.spawnCar("s36", car) 
+
 
     print "\n\nDone in " + str(time.time() - t) + " s"
