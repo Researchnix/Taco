@@ -36,40 +36,28 @@ class Map:
             # 1 length of street
             # 2 outgoing intersection
             # 3 incoming intersection
-
             newst = Street.Street(line[0], int(line[1]), line[2], line[3])
             self.streets[line[0]] = newst
+
         f.close()
-
-        street = Street.Street("dhawu", 234, "i1", "i3")
-        self.intersections["i1"].addOutgoing(street)
-        #print self.intersections["i1"].outgoing
-
-        """
-        print self.streets
+        # Add all outgoing streets to the intersections
         for s in self.streets.values():
             self.intersections[s.fromID].addOutgoing(s)
-        """
+
+#########################################################################
+#########################################################################
+                           # COde only for test purposes
+#########################################################################
+#########################################################################
 
         for i in self.intersections.values():
+            print id(i.outgoing)
+
+        for i in self.intersections.values():
+            print "\n\n"
+            print "outgoing streets from the intersection ", i.ID
             for o in i.outgoing:
                 print o.ID
-            print "\n\n"
-
-        """
-        example = Street.Street("test", 10, "i1", "i2")
-        print "This is our test intersection"
-        print self.intersections["i1"].incoming
-        self.intersections["i1"].addIncoming(example)
-        print self.intersections["i1"].incoming
-        """
-
-        """
-            self.intersections[line[2]].addOutgoing(newst)
-            self.intersections[line[3]].addIncoming(newst)
-        f.close()
-        print "all done!"
-        """
 
     # Spawns the passed car on the specified street, returns true if successful, false if not
     def spawnCar(self, car):
