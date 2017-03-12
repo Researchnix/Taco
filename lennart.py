@@ -12,6 +12,7 @@ import FourWay
 import Car
 import Street
 import Map
+import Transmitter
 
 
 
@@ -23,7 +24,13 @@ if __name__ == "__main__":
     car = Car.Car("a", "s36", "s78", 3)
     r = Street.Street("r", 10)
 
+
     karte = Map.Map("test1_street", "test1_inter")
+    karte.show()
+    karte.spawnCar(car)
+
+    tran = Transmitter.Transmitter()
+    print tran.streetTransmit(karte.intersections, karte.streets)
     
 
 
