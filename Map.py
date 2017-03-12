@@ -7,6 +7,7 @@
 #
 import Intersection
 import Street
+import Car
 
 
 class Map:
@@ -36,4 +37,6 @@ class Map:
         return self.streets.get(streetID, False).queueCar(car)
 
     # Spawns a car with random route at a random street
-    def spawnRandomCar(self):
+    #def spawnRandomCar(self, *ID):
+    #   if ID is None:
+    #      car = Car.Car()
