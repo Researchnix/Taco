@@ -31,7 +31,7 @@ class Street:
         self.ID = ID
         self.length = length
 
-# Adds a Car at the end of the queue, returns true if successful, false if street is full
+    # Adds a Car at the end of the queue, returns true if successful, false if street is full
     def queueCar(self, c):
         if self.carAmount >= self.length:
             return False
@@ -43,13 +43,13 @@ class Street:
             self.carAmount += 1
             return True
 
-# Returns a car from the front of the queue, None if street is empty
+    # Returns a car from the front of the queue, None if street is empty
     def dequeueCar(self):
         self.carAmount -= 1
         self.flexQueue.append(None)
         return self.standigQueue.popleft()
 
-# Moves cars up the street into queue
+    # Moves cars up the street into queue
     def update(self):
         flexFirst = self.flexQueue.popleft()
         if flexFirst is None:
