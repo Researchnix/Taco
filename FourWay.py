@@ -28,6 +28,7 @@ class FourWay:
         trali = TrafficLight.TrafficLight(4,4)
 
     def initializeTrafficLight(self):
+        pass
 
 
     # Attach a new street as incoming
