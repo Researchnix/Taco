@@ -42,7 +42,7 @@ class FourWay:
 
     # Do a time step, which means:
     #       Update traffic lights
-    #       Try pushing cars in streets
+    #       Try to queue cars in streets
     #       Ask streets to dequeue cars
     def timeStep(self, time):
         self.trali.update(time) # Only a dummy for now
