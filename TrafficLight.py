@@ -8,10 +8,17 @@
 
 class TrafficLight:
 
+    # State is a 2D array with the values 0 and 1 associating red and green
+    # to the path from one incoming street to another outgoing street
     state = 0
 
 
-    def setState(self, s):
+
+    def __init__(self, numberIn, numberOut):
+        self.state = [[0 for i in range(numberIn)] for j in range(numberOut)]
+
+        
+    def setState(self, ):
         self.state = s
 
 

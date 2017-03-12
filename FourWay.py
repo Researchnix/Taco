@@ -19,12 +19,16 @@ class FourWay:
     outgoing = []
     waitingCars = {}
     queueSize = 5       # Number of cars that can wait in each queue
-    trali = TrafficLight.TrafficLight()
+    trali = 0
     
     def __init__ (self, ID, x, y):
         self.ID = ID
         self.xPos = x
         self.yPos = y
+        trali = TrafficLight.TrafficLight(4,4)
+
+    def initializeTrafficLight(self):
+
 
     # Attach a new street as incoming
     def attachInStreet(self, s):
@@ -51,6 +55,7 @@ class FourWay:
         # Try to queue cars in streets
         # It depends 
         for s in self.outgoing:
+            pass
 
 
 

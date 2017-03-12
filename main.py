@@ -8,11 +8,13 @@
 
 import sys
 import time
+import FourWay
 
 
 if __name__ == "__main__":
     t = time.time()
 
 
+    f = FourWay.FourWay("id", 1, 2)
 
     print "\n\nDone in " + str(time.time() - t) + " s"
