@@ -11,6 +11,8 @@ class Car:
     ID = ""
     # starting point of the car
     start = 0
+    # departure time stamp
+    startTime = 0
     # destinatino of the car
     destination = 0
     # This should be a list of vertices that the needs to visit to reach
@@ -19,12 +21,13 @@ class Car:
     # From the InterRoute one can simply obtain the StreetRoute,
     # by replacing the i and i+1 entry by the unique street leading
     # from i to i+1
-    StreetRoute[]
+    StreetRoute = []
     # nextStreet = StreetRoute[0]
 
 
 
-    def __init__ (self, ID, start, destination):
+    def __init__ (self, ID, start, destination, *timestamp):
         self.ID = ID
         self.start = start
         self.destination = destination
+        self.startTime = timestamp
