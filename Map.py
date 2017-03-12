@@ -8,6 +8,7 @@
 import FourWay
 import Street
 import Car
+from random import *
 
 
 class Map:
@@ -41,6 +42,10 @@ class Map:
         return self.streets.get(car.destination, False).queueCar(car)
 
     # Spawns a car with random route at a random street
-    #def spawnRandomCar(self, *ID):
-    #   if ID is None:
-    #      car = Car.Car()
+    def spawnRandomCar(self):
+       street1 = self.streets.values()[randint(0,len(self.streets.values())-1)]
+       street2 = self.streets.values()[randint(0,len(self.streets.values())-1)]
+       name = "car" + str(randint(0,99999999999999999))
+       car = Car.Car(name, street1.ID, street2.ID)
+       street1.queueCar(car)
+

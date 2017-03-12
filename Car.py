@@ -33,7 +33,7 @@ class Car:
 
 
 
-    def __init__ (self, ID, start, destination, *timestamp):
+    def __init__ (self, ID, start, destination, timestamp=0):
         self.ID = ID
         self.start = start
         self.destination = destination

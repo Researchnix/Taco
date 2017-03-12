@@ -25,7 +25,8 @@ if __name__ == "__main__":
 
     karte = Map.Map("test1_street", "test1_inter")
     print karte.streets
-    karte.spawnCar(car) 
+    print karte.spawnCar(car) 
+    print karte.spawnRandomCar()
 
 
     print "\n\nDone in " + str(time.time() - t) + " s"
