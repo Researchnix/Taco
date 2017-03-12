@@ -8,7 +8,7 @@
 
 output:
 	clear
-	python main.py
+	python lennart.py
 
 clean:
 	rm -rf *.pyc

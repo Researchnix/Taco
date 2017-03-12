@@ -40,6 +40,7 @@ class FourWay:
 
     # Attach a new street as outgoing
     def addOutgoing(self, s):
+        print "add ", s.ID, " to ", self.ID
         self.outgoing.append(s)
         self.waitingCars[s.ID] = {}
         for u in self.incoming:
