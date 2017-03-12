@@ -23,15 +23,11 @@ class Map:
         f = open(fileInter, 'r')
         for line in f:
             line = line.split()
-            print line
-            print "adding the intersection ", line[0]
             self.intersections[line[0]] = FourWay.FourWay(line[0], int(line[1]), int(line[2]))
-        print self.intersections
         f.close()
         f = open(fileStreets, 'r')
         for line in f:
             line = line.split()
-            print line
             # 0 street id
             # 1 length of street
             # 2 outgoing intersection
@@ -44,20 +40,6 @@ class Map:
         for s in self.streets.values():
             self.intersections[s.fromID].addOutgoing(s)
 
-#########################################################################
-#########################################################################
-                           # COde only for test purposes
-#########################################################################
-#########################################################################
-
-        for i in self.intersections.values():
-            print id(i.outgoing)
-
-        for i in self.intersections.values():
-            print "\n\n"
-            print "outgoing streets from the intersection ", i.ID
-            for o in i.outgoing:
-                print o.ID
 
     # Spawns the passed car on the specified street, returns true if successful, false if not
     def spawnCar(self, car):

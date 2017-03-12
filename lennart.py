@@ -24,9 +24,7 @@ if __name__ == "__main__":
     r = Street.Street("r", 10)
 
     karte = Map.Map("test1_street", "test1_inter")
-    for i in karte.intersections.values():
-        for a in i.incoming:
-            pass
+    
 
 
     print "\n\nDone in " + str(time.time() - t) + " s"
