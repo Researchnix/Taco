@@ -10,10 +10,19 @@ import Car.Car
 import collections
 
 class Street:
+    #Street ID
     ID = ""
+
+    #Street length determines time required to pass through the road, as well as its capacity
     length = 10
+
+    #Amount of cars currently on the street
     carAmount = 0
+
+    #The part of the street that is not occupied and can quickly be passed through
     flexQueue = collections.deque([])
+
+    #The cars stack up in this queue after passing through the free section
     standingQueue = collections.deque([])
 
 
@@ -34,12 +43,13 @@ class Street:
             self.carAmount += 1
             return True
 
-
+#Returns a car from the front of the queue, None if street is empty
     def dequeueCar(self):
         self.carAmount -= 1
         self.flexQueue.append(None)
         return self.standigQueue.popleft()
 
+#Moves cars up the street into queue
     def update(self):
         flexFirst = self.flexQueue.popleft()
         if flexFirst is None:
@@ -48,10 +58,11 @@ class Street:
             self.standingQueue.append(flexFirst)
 
 
-
+#Returns amount of cars currently on street
     def getCarAmount(self):
         return self.carAmount
 
+#Returns the ratio of cars on street/ street length
     def getPctFull(self):
         return (float)(self.carAmount) / self.length
 
