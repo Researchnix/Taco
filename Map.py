@@ -8,6 +8,7 @@
 import Intersection
 import Street
 
+
 class Map:
 
     intersections = {}
