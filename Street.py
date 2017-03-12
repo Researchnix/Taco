@@ -10,19 +10,19 @@ import Car.Car
 import collections
 
 class Street:
-    #Street ID
+    # Street ID
     ID = ""
 
-    #Street length determines time required to pass through the road, as well as its capacity
+    # Street length determines time required to pass through the road, as well as its capacity
     length = 10
 
-    #Amount of cars currently on the street
+    # Amount of cars currently on the street
     carAmount = 0
 
-    #The part of the street that is not occupied and can quickly be passed through
+    # The part of the street that is not occupied and can quickly be passed through
     flexQueue = collections.deque([])
 
-    #The cars stack up in this queue after passing through the free section
+    # The cars stack up in this queue after passing through the free section
     standingQueue = collections.deque([])
 
 
@@ -31,7 +31,7 @@ class Street:
         self.ID = ID
         self.length = length
 
-#Adds a Car at the end of the queue, returns true if successful, false if street is full
+# Adds a Car at the end of the queue, returns true if successful, false if street is full
     def queueCar(self, c):
         if self.carAmount >= self.length:
             return False
@@ -43,13 +43,13 @@ class Street:
             self.carAmount += 1
             return True
 
-#Returns a car from the front of the queue, None if street is empty
+# Returns a car from the front of the queue, None if street is empty
     def dequeueCar(self):
         self.carAmount -= 1
         self.flexQueue.append(None)
         return self.standigQueue.popleft()
 
-#Moves cars up the street into queue
+# Moves cars up the street into queue
     def update(self):
         flexFirst = self.flexQueue.popleft()
         if flexFirst is None:
@@ -58,11 +58,11 @@ class Street:
             self.standingQueue.append(flexFirst)
 
 
-#Returns amount of cars currently on street
+# Returns amount of cars currently on street
     def getCarAmount(self):
         return self.carAmount
 
-#Returns the ratio of cars on street/ street length
+# Returns the ratio of cars on street/ street length
     def getPctFull(self):
         return (float)(self.carAmount) / self.length
 
