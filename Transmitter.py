@@ -7,24 +7,30 @@
 #
 
 import json
+import Bundle
+import FourWay
 
 class Transmitter:
 
+    bundles = []
+
+    def __init__(self, intersections, streets):
+        self.bundles = self.bundle(streets)
 
     def streetTransmit(self, intersections, streets):
         streetContainer = {}
-        for s in streets.values():
-            streetContainer[s.ID] = {
-                        'id' : s.ID,
-                        'from' : { 'x' : intersections[s.fromID].xPos,
-                                    'y' : intersections[s.fromID].yPos
+        for b in self.bundles:
+            streetContainer[b.ID] = {
+                        'id' : b.ID,
+                        'from' : { 'x' : intersections[b.vertices[0]].xPos,
+                                    'y' : intersections[b.vertices[0]].yPos
                                 },
-                        'to' : { 'x' : intersections[s.toID].xPos,
-                                    'y' : intersections[s.toID].yPos
-                                }
-
+                        'to' : { 'x' : intersections[b.vertices[1]].xPos,
+                                    'y' : intersections[b.vertices[1]].yPos
+                                },
+                        'percent' : b.volume
                                     }
-        return json.dumps(streetContainer)
+        print json.dumps(streetContainer)
 
 
     def intersectionTransmit(self, intersections):
@@ -34,8 +40,23 @@ class Transmitter:
                         'id' : i.ID,
                         'x' : i.xPos,
                         'y' : i.yPos,
-                        'streets' : [s.ID for s in i.incoming] + [s.ID for s in i.outgoing],
-                        # TODO make this not a dummy
+                        'inStreets' : [s.ID for s in i.incoming],
+                        'OutStreets' : [s.ID for s in i.outgoing],
+                        #'open' : filter(lambda x : i.trali.pathAllowed(x[0], x[1]), [[[a.ID, b.ID] for a in i.incoming] for b in i.outgoing])
                                             }
-        return json.dumps(streetContainer)
+        print json.dumps(intersectionContainer)
 
+
+    def update(self, streets):
+        for b in self.bundles:
+            b.volume = sum([streets[ID].carAmount for ID in b.associatedStreets])
+
+
+    def bundle(self, streets):
+        bundles = []
+        for s in streets.values():
+            if not (True in [b.associateStreet(s) for b in bundles]):
+                bundles.append(Bundle.Bundle(s))
+        return bundles
+            
+            

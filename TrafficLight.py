@@ -27,8 +27,8 @@ class TrafficLight:
     # Dummy function, should actually decide if
     # if a path on the intersection is clear
     # depending on its current state
-    def pathAllowed(self, a, b):
-            return self.state[a][b]
+    def pathAllowed(self, i, o):
+            return self.state[o][i]
 
 
     # Another dummt functio

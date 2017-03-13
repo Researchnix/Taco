@@ -44,7 +44,9 @@ class Map:
 
         """ Initialize Traffic Lights """
         for inter in self.intersections.values():
+            print inter.ID, " has now a traffic light"
             inter.initializeTrafficLight()
+            print inter.trali
 
 
     def update(self):

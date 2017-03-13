@@ -19,7 +19,7 @@ class FourWay:
     outgoing = []
     waitingCars = {}
     queueSize = 5       # Number of cars that can wait in each queue
-    trali = 0
+    trali = None 
     
     def __init__ (self, ID, x, y):
         self.ID = ID
@@ -60,14 +60,11 @@ class FourWay:
         # It depends on the traffic light state
         for o in self.outgoing:
             for i in self.incoming:
-                if self.trali.pathAllowed(o.ID, i.ID) and len(self.waitingCars[o.ID][i.ID]) != 0:
+                if self.trali.pathAllowed(i.ID, o.ID) and len(self.waitingCars[o.ID][i.ID]) != 0:
                     car = self.waitingCars[o.ID][i.ID].pop()
                     if not o.queueCar(car):
                         self.waitingCars[o.ID][i.ID].appendleft(car)
                         
-                    
-
-
 
         # Ask streets to dequeue a car, if there is space in the specific queue
         # for this incoming street
