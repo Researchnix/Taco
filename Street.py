@@ -50,6 +50,7 @@ class Street:
         if self.carAmount >= self.length:
             return False
         else:
+            c.history.append(self.ID)
             if c.peekNextSt() is None or c.peekNextSt is self.ID:
                 self.tracker.trackCar(c)
             else:

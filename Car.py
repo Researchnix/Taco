@@ -36,6 +36,9 @@ class Car:
     StreetQueue = collections.deque(StreetRoute)
     # nextStreet = StreetRoute[0]
 
+    # record of actual roads visited
+    history = []
+
 
 
     def __init__ (self, ID, start, destination, timestamp=0, route = None):
@@ -43,6 +46,7 @@ class Car:
         self.start = start
         self.destination = destination
         self.startTime = timestamp
+        self.history = list([])
         if route is not None:
             self.StreetRoute = route
             self.StreetQueue = collections.deque(self.StreetRoute)
@@ -61,4 +65,4 @@ class Car:
 
     def arrive(self, timestamp):
         self.endTime = timestamp
-        self.totalTime = self.startTime - self.endTime
+        self.totalTime = self.endTime - self.startTime
