@@ -1,12 +1,11 @@
 import time
-import MyMap
 import Map
 import RandomRoute
 
 if __name__ == "__main__":
     t = time.time()
 
-    karte = MyMap.MyMap("test1_street", "test1_inter")
+    karte = Map.Map("test1_street", "test1_inter")
     rg = RandomRoute.RandomRoute(karte)
 
 
