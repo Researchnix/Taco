@@ -5,7 +5,7 @@
 #  Created by Mat, Kon and Len on 2017-03-11.
 #  Copyright 2016 Researchnix. All rights reserved.
 #
-
+import collections
 
 class Car:
 
@@ -29,12 +29,15 @@ class Car:
     # by replacing the i and i+1 entry by the unique street leading
     # from i to i+1
     StreetRoute = []
+    StreetQueue = collections.deque(StreetRoute)
     # nextStreet = StreetRoute[0]
 
 
 
-    def __init__ (self, ID, start, destination, timestamp=0):
+    def __init__ (self, ID, start, destination, timestamp=0, route = None):
         self.ID = ID
         self.start = start
         self.destination = destination
         self.startTime = timestamp
+        if route is not None:
+            StreetRoute = route
