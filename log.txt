@@ -1,1 +1,5 @@
 Bookkeeper initialized.
+car65306954413746663 - dep: 0, arr: 0, time: 0
+route: []
+history: ['s87']
+

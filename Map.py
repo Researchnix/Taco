@@ -50,8 +50,8 @@ class Map:
     def update(self):
         for street in self.streets.values():
             street.update()
-        #for inter in self.intersections.values():
-        #    inter.timeStep(0)
+        for inter in self.intersections.values():
+            inter.update()
 
     def show(self):
         for i in sorted(self.intersections.values()):

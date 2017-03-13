@@ -27,7 +27,7 @@ class FourWay:
         self.yPos = y
         self.incoming = list([])
         self.outgoing = list([])
-        waitingCars = dict([])
+        self.waitingCars = dict([])
 
     # Initialize this traffic light only after all streets are attached to this intersection
     def initializeTrafficLight(self):
@@ -52,8 +52,8 @@ class FourWay:
     #       Update traffic lights
     #       Try to queue cars in streets
     #       Ask streets to dequeue cars
-    def timeStep(self, time):
-        self.trali.update(time) # Only a dummy for now
+    def update(self):
+        self.trali.update(0) # Only a dummy for now
         
 
         # Try to queue cars in streets
@@ -69,7 +69,7 @@ class FourWay:
         # Ask streets to dequeue a car, if there is space in the specific queue
         # for this incoming street
         for s in self.incoming:
-            if max([len(x[s.ID]) for x in self.waitingCars]) <= self.queueSize:
+            if max([len(x[s.ID]) for x in self.waitingCars.values()]) <= self.queueSize:
                 newCar = s.dequeueCar()
                 if newCar != None:
                     self.waitingCars[newCar.dequeueNextSt(), s.ID].append(newCar)

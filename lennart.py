@@ -31,6 +31,10 @@ if __name__ == "__main__":
 
     karte = Map.Map("test1_street", "test1_inter", keeper)
     karte.show()
+    print "spawn a random car"
+    karte.spawnRandomCar()
+    karte.update()
+
 
     tran = Transmitter.Transmitter(karte.intersections, karte.streets)
     tran.streetTransmit(karte.intersections, karte.streets)
@@ -38,7 +42,8 @@ if __name__ == "__main__":
 
     print "\n\n\n"
     exFW = karte.intersections.values()[0]
-    print exFW.trali
+    s = exFW.incoming[0]
+    #max([len(x[s.ID]) for x in exFW.waitingCars
     
 
 

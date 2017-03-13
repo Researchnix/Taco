@@ -41,6 +41,7 @@ class Street:
         self.toID = toID
         for i in range(length):
             self.flexQueue.append(None)
+        
 
     def setTracker(self, tracker):
         self.tracker = tracker
@@ -65,7 +66,7 @@ class Street:
     def dequeueCar(self):
         self.carAmount -= 1
         self.flexQueue.append(None)
-        return self.standigQueue.popleft()
+        return self.standingQueue.popleft()
 
     # Moves cars up the street into queue
     def update(self):
