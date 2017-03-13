@@ -7,6 +7,7 @@
 #
 
 import collections
+import BookKeeper
 
 
 class Street:
@@ -30,6 +31,9 @@ class Street:
     # The cars stack up in this queue after passing through the free section
     standingQueue = collections.deque([])
 
+    # The global bookkeeper
+    tracker = None
+
     def __init__(self, ID, length, fromID = None, toID = None):
         self.ID = ID
         self.length = length
@@ -37,6 +41,9 @@ class Street:
         self.toID = toID
         for i in range(length):
             self.flexQueue.append(None)
+
+    def setTracker(self, tracker):
+        self.tracker = tracker
 
     # Adds a Car at the end of the queue, returns true if successful, false if street is full
     def queueCar(self, c):
@@ -63,6 +70,7 @@ class Street:
             self.flexQueue.append(None)
         else:
             self.standingQueue.append(flexFirst)
+
 
     # Returns amount of cars currently on street
     def getCarAmount(self):

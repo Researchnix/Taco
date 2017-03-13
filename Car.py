@@ -15,8 +15,12 @@ class Car:
     # starting point of the car
     start = 0
 
-    # departure time stamp
+    # departure and arrival time stamps
     startTime = 0
+    endTime = 0
+
+    # total travel time
+    totalTime = 0
 
     # destinatino of the car
     destination = 0
@@ -40,4 +44,21 @@ class Car:
         self.destination = destination
         self.startTime = timestamp
         if route is not None:
-            StreetRoute = route
+            self.StreetRoute = route
+            self.StreetQueue = collections.deque(self.StreetRoute)
+
+    def dequeueNextSt(self):
+        try:
+            return self.StreetQueue.popleft()
+        except:
+            return None
+
+    def peekNextSt(self):
+        try:
+            return self.StreetQueue[0]
+        except:
+            return None
+
+    def arrive(self, timestamp):
+        self.endTime = timestamp
+        self.totalTime = self.startTime - self.endTime

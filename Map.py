@@ -50,7 +50,7 @@ class Map:
 
     # Spawns the passed car on the specified street, returns true if successful, false if not
     def spawnCar(self, car):
-        target = self.streets.get(car.destination)
+        target = self.streets.get(car.dequeueNextSt())
         return target.queueCar(car)
 
     # Spawns a car with random route at a random street
