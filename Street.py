@@ -66,7 +66,10 @@ class Street:
     def dequeueCar(self):
         self.carAmount -= 1
         self.flexQueue.append(None)
-        return self.standingQueue.popleft()
+        if len(self.standingQueue) != 0:
+            return self.standingQueue.popleft()
+        else:
+            return None
 
     # Moves cars up the street into queue
     def update(self):

@@ -50,7 +50,7 @@ class Transmitter:
 
     def update(self, streets):
         for b in self.bundles:
-            b.volume = sum([streets[ID].carAmount for ID in b.associatedStreets])
+            b.volume = sum([streets[ID].getPctFull() for ID in b.associatedStreets])
 
 
     def bundle(self, streets):
