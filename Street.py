@@ -50,11 +50,14 @@ class Street:
         if self.carAmount >= self.length:
             return False
         else:
-            flexFirst = self.flexQueue.popleft()
-            if flexFirst is not None:
-                self.standingQueue.append(flexFirst)
-            self.flexQueue.append(c)
-            self.carAmount += 1
+            if c.peekNextSt() is None or c.peekNextSt is self.ID:
+                self.tracker.trackCar(c)
+            else:
+                flexFirst = self.flexQueue.popleft()
+                if flexFirst is not None:
+                    self.standingQueue.append(flexFirst)
+                self.flexQueue.append(c)
+                self.carAmount += 1
             return True
 
     # Returns a car from the front of the queue, None if street is empty

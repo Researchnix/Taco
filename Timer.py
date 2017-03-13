@@ -10,5 +10,5 @@ class Timer:
     def get(self):
         return self.time
 
-    def recordevent(self):
+    def recordEvent(self):
         self.events.append(self.time)

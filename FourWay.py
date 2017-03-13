@@ -60,7 +60,7 @@ class FourWay:
         # It depends on the traffic light state
         for o in self.outgoing:
             for i in self.incoming:
-                if trali.pathAllowed(o.ID, i.ID) and len(self.waitingCars[o.ID][i.ID]) != 0:
+                if self.trali.pathAllowed(o.ID, i.ID) and len(self.waitingCars[o.ID][i.ID]) != 0:
                     car = self.waitingCars[o.ID][i.ID].pop()
                     if not o.queueCar(car):
                         self.waitingCars[o.ID][i.ID].appendleft(car)
