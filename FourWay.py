@@ -31,7 +31,7 @@ class FourWay:
 
     # Initialize this traffic light only after all streets are attached to this intersection
     def initializeTrafficLight(self):
-        trali = TrafficLight.TrafficLight(self.incoming, self.outgoing)
+        self.trali = TrafficLight.TrafficLight(self.incoming, self.outgoing)
 
 
     # Attach a new street as incoming
@@ -72,6 +72,6 @@ class FourWay:
             if max([len(x[s.ID]) for x in self.waitingCars]) <= self.queueSize:
                 newCar = s.dequeueCar()
                 if newCar != None:
-                    self.waitingCars[newCar.nextStreet(), s.ID].append(newCar)
+                    self.waitingCars[newCar.dequeueNextSt(), s.ID].append(newCar)
          
 

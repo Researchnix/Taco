@@ -18,6 +18,7 @@ class Transmitter:
         self.bundles = self.bundle(streets)
 
     def streetTransmit(self, intersections, streets):
+        self.update(streets)
         streetContainer = {}
         for b in self.bundles:
             streetContainer[b.ID] = {
@@ -42,7 +43,7 @@ class Transmitter:
                         'y' : i.yPos,
                         'inStreets' : [s.ID for s in i.incoming],
                         'OutStreets' : [s.ID for s in i.outgoing],
-                        #'open' : filter(lambda x : i.trali.pathAllowed(x[0], x[1]), [[[a.ID, b.ID] for a in i.incoming] for b in i.outgoing])
+                        'open' : filter(lambda x : i.trali.pathAllowed(x[0], x[1]), [[a.ID, b.ID] for a in i.incoming for b in i.outgoing])
                                             }
         print json.dumps(intersectionContainer)
 
