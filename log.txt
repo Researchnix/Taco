@@ -1,401 +1,401 @@
 Bookkeeper initialized.
-car15754660778827676 - dep: 0, arr: 0, time: 0
-route: []
-history: ['s63']
-
-car92832125551638182 - dep: 0, arr: 1, time: 1
-route: []
-history: ['s65']
-
-car54472556509215321 - dep: 0, arr: 2, time: 2
-route: []
-history: ['s69']
-
-car65791795021540696 - dep: 0, arr: 3, time: 3
-route: []
-history: ['s45']
-
-car79041172378240918 - dep: 0, arr: 4, time: 4
-route: []
-history: ['s85']
-
-car89849617707882477 - dep: 0, arr: 5, time: 5
-route: []
-history: ['s54']
-
-car16097902249914015 - dep: 0, arr: 6, time: 6
-route: []
-history: ['s96']
-
-car80724696135086937 - dep: 0, arr: 7, time: 7
+car570127204412 - dep: 0, arr: 0, time: 0
 route: []
 history: ['s14']
 
-car6896310004824884 - dep: 0, arr: 8, time: 8
-route: []
-history: ['s21']
-
-car64969672181626254 - dep: 0, arr: 9, time: 9
-route: []
-history: ['s89']
-
-car27816946671416724 - dep: 0, arr: 10, time: 10
-route: []
-history: ['s74']
-
-car44086870487260692 - dep: 0, arr: 11, time: 11
-route: []
-history: ['s87']
-
-car34217863346240602 - dep: 0, arr: 12, time: 12
-route: []
-history: ['s85']
-
-car478051616950424 - dep: 0, arr: 13, time: 13
-route: []
-history: ['s21']
-
-car72912276103644173 - dep: 0, arr: 14, time: 14
-route: []
-history: ['s63']
-
-car95566802402748996 - dep: 0, arr: 15, time: 15
-route: []
-history: ['s87']
-
-car3370705355617603 - dep: 0, arr: 16, time: 16
+car300751170882 - dep: 1, arr: 1, time: 0
 route: []
 history: ['s56']
 
-car44997336803168196 - dep: 0, arr: 17, time: 17
+car825936344093 - dep: 2, arr: 2, time: 0
 route: []
-history: ['s87']
+history: ['s78']
 
-car19626416295303769 - dep: 0, arr: 18, time: 18
+car370732922397 - dep: 3, arr: 3, time: 0
 route: []
-history: ['s89']
+history: ['s21']
 
-car45311202556226860 - dep: 0, arr: 19, time: 19
+car608102253973 - dep: 4, arr: 4, time: 0
 route: []
-history: ['s56']
+history: ['s78']
 
-car48071158098528386 - dep: 0, arr: 20, time: 20
+car396355262925 - dep: 5, arr: 5, time: 0
+route: []
+history: ['s45']
+
+car26047048290 - dep: 6, arr: 6, time: 0
+route: []
+history: ['s32']
+
+car861344113563 - dep: 7, arr: 7, time: 0
 route: []
 history: ['s52']
 
-car37365283076258220 - dep: 0, arr: 21, time: 21
-route: []
-history: ['s23']
-
-car60525168065515260 - dep: 0, arr: 22, time: 22
-route: []
-history: ['s74']
-
-car70727268442010669 - dep: 0, arr: 23, time: 23
-route: []
-history: ['s89']
-
-car29481848696520743 - dep: 0, arr: 24, time: 24
-route: []
-history: ['s41']
-
-car38434097751034611 - dep: 0, arr: 25, time: 25
-route: []
-history: ['s14']
-
-car97265146611043768 - dep: 0, arr: 26, time: 26
-route: []
-history: ['s69']
-
-car43435097340713489 - dep: 0, arr: 27, time: 27
-route: []
-history: ['s25']
-
-car55583015460816564 - dep: 0, arr: 28, time: 28
-route: []
-history: ['s14']
-
-car84143160207049468 - dep: 0, arr: 29, time: 29
-route: []
-history: ['s96']
-
-car38035652970037822 - dep: 0, arr: 30, time: 30
-route: []
-history: ['s56']
-
-car60707425133035135 - dep: 0, arr: 31, time: 31
-route: []
-history: ['s25']
-
-car44263713239514824 - dep: 0, arr: 32, time: 32
-route: []
-history: ['s25']
-
-car69228957989747746 - dep: 0, arr: 33, time: 33
-route: []
-history: ['s74']
-
-car79844547728981642 - dep: 0, arr: 34, time: 34
-route: []
-history: ['s85']
-
-car59086703541451558 - dep: 0, arr: 35, time: 35
-route: []
-history: ['s98']
-
-car9682262200706576 - dep: 0, arr: 36, time: 36
-route: []
-history: ['s98']
-
-car90054667223827708 - dep: 0, arr: 37, time: 37
-route: []
-history: ['s54']
-
-car4211688656907595 - dep: 0, arr: 38, time: 38
+car502384450163 - dep: 8, arr: 8, time: 0
 route: []
 history: ['s78']
 
-car43606228651204712 - dep: 0, arr: 39, time: 39
+car632640750852 - dep: 9, arr: 9, time: 0
 route: []
-history: ['s65']
+history: ['s21']
 
-car19804631195272966 - dep: 0, arr: 40, time: 40
-route: []
-history: ['s14']
-
-car86178528081643955 - dep: 0, arr: 41, time: 41
+car252840662075 - dep: 10, arr: 10, time: 0
 route: []
 history: ['s36']
 
-car14932840706870683 - dep: 0, arr: 42, time: 42
+car71079183326 - dep: 11, arr: 11, time: 0
+route: []
+history: ['s14']
+
+car734929304205 - dep: 12, arr: 12, time: 0
+route: []
+history: ['s65']
+
+car542315535401 - dep: 13, arr: 13, time: 0
+route: []
+history: ['s32']
+
+car126720843150 - dep: 14, arr: 14, time: 0
 route: []
 history: ['s74']
 
-car3515552585464284 - dep: 0, arr: 43, time: 43
+car255976024403 - dep: 15, arr: 15, time: 0
+route: []
+history: ['s54']
+
+car345427113573 - dep: 16, arr: 16, time: 0
 route: []
 history: ['s78']
 
-car14203476955623147 - dep: 0, arr: 44, time: 44
+car960466032135 - dep: 17, arr: 17, time: 0
 route: []
-history: ['s85']
+history: ['s65']
 
-car46872144442989945 - dep: 0, arr: 45, time: 45
+car761474980649 - dep: 18, arr: 18, time: 0
 route: []
 history: ['s69']
 
-car91797406039310114 - dep: 0, arr: 46, time: 46
+car954222393118 - dep: 19, arr: 19, time: 0
 route: []
-history: ['s45']
+history: ['s25']
 
-car17860230905019015 - dep: 0, arr: 47, time: 47
+car219106648439 - dep: 20, arr: 20, time: 0
+route: []
+history: ['s65']
+
+car560818279925 - dep: 21, arr: 21, time: 0
+route: []
+history: ['s47']
+
+car158802392176 - dep: 22, arr: 22, time: 0
+route: []
+history: ['s47']
+
+car409311701369 - dep: 23, arr: 23, time: 0
+route: []
+history: ['s25']
+
+car448117171798 - dep: 24, arr: 24, time: 0
+route: []
+history: ['s25']
+
+car196648546144 - dep: 25, arr: 25, time: 0
+route: []
+history: ['s56']
+
+car594892881365 - dep: 26, arr: 26, time: 0
+route: []
+history: ['s65']
+
+car818833561889 - dep: 27, arr: 27, time: 0
+route: []
+history: ['s23']
+
+car816992867896 - dep: 28, arr: 28, time: 0
+route: []
+history: ['s89']
+
+car51661837519 - dep: 29, arr: 29, time: 0
+route: []
+history: ['s56']
+
+car38256808778 - dep: 30, arr: 30, time: 0
+route: []
+history: ['s21']
+
+car429656973861 - dep: 31, arr: 31, time: 0
+route: []
+history: ['s36']
+
+car351747390009 - dep: 32, arr: 32, time: 0
+route: []
+history: ['s96']
+
+car366115386444 - dep: 33, arr: 33, time: 0
+route: []
+history: ['s14']
+
+car412835385806 - dep: 34, arr: 34, time: 0
+route: []
+history: ['s87']
+
+car379811993937 - dep: 35, arr: 35, time: 0
+route: []
+history: ['s21']
+
+car303533348318 - dep: 36, arr: 36, time: 0
+route: []
+history: ['s89']
+
+car839648234939 - dep: 37, arr: 37, time: 0
+route: []
+history: ['s87']
+
+car679914844784 - dep: 38, arr: 38, time: 0
+route: []
+history: ['s74']
+
+car373120073102 - dep: 39, arr: 39, time: 0
+route: []
+history: ['s74']
+
+car521874945793 - dep: 40, arr: 40, time: 0
 route: []
 history: ['s12']
 
-car67198277550987204 - dep: 0, arr: 48, time: 48
+car318415981897 - dep: 41, arr: 41, time: 0
 route: []
-history: ['s47']
+history: ['s58']
 
-car98582204845559760 - dep: 0, arr: 49, time: 49
-route: []
-history: ['s52']
-
-car25961385254326839 - dep: 0, arr: 50, time: 50
-route: []
-history: ['s52']
-
-car27523779705637269 - dep: 0, arr: 51, time: 51
-route: []
-history: ['s54']
-
-car49716392202851827 - dep: 0, arr: 52, time: 52
-route: []
-history: ['s36']
-
-car71817792050199075 - dep: 0, arr: 53, time: 53
-route: []
-history: ['s65']
-
-car6034620869756483 - dep: 0, arr: 54, time: 54
+car871607341719 - dep: 42, arr: 42, time: 0
 route: []
 history: ['s69']
 
-car81726526389936895 - dep: 0, arr: 55, time: 55
+car443081722905 - dep: 43, arr: 43, time: 0
 route: []
-history: ['s58']
+history: ['s12']
 
-car89705235024738299 - dep: 0, arr: 56, time: 56
+car972277542037 - dep: 44, arr: 44, time: 0
 route: []
-history: ['s21']
+history: ['s47']
 
-car63516733489827148 - dep: 0, arr: 57, time: 57
+car615834097280 - dep: 45, arr: 45, time: 0
 route: []
-history: ['s23']
+history: ['s12']
 
-car62650084147875383 - dep: 0, arr: 58, time: 58
+car157062417084 - dep: 46, arr: 46, time: 0
 route: []
-history: ['s65']
+history: ['s45']
 
-car6647645950801707 - dep: 0, arr: 59, time: 59
-route: []
-history: ['s41']
-
-car79144060122170750 - dep: 0, arr: 60, time: 60
-route: []
-history: ['s58']
-
-car83925928362296716 - dep: 0, arr: 61, time: 61
-route: []
-history: ['s65']
-
-car37156442500829589 - dep: 0, arr: 62, time: 62
-route: []
-history: ['s32']
-
-car49117365195999807 - dep: 0, arr: 63, time: 63
-route: []
-history: ['s96']
-
-car36441689810823156 - dep: 0, arr: 64, time: 64
-route: []
-history: ['s23']
-
-car91984894260408024 - dep: 0, arr: 65, time: 65
-route: []
-history: ['s78']
-
-car22247151953109598 - dep: 0, arr: 66, time: 66
-route: []
-history: ['s96']
-
-car59824111091108082 - dep: 0, arr: 67, time: 67
-route: []
-history: ['s63']
-
-car94711373907550967 - dep: 0, arr: 68, time: 68
-route: []
-history: ['s65']
-
-car83604468112170387 - dep: 0, arr: 69, time: 69
-route: []
-history: ['s74']
-
-car42069534026684111 - dep: 0, arr: 70, time: 70
-route: []
-history: ['s98']
-
-car51279080700017085 - dep: 0, arr: 71, time: 71
-route: []
-history: ['s98']
-
-car1014855120680885 - dep: 0, arr: 72, time: 72
-route: []
-history: ['s21']
-
-car85812215667668728 - dep: 0, arr: 73, time: 73
-route: []
-history: ['s14']
-
-car37956692985021443 - dep: 0, arr: 74, time: 74
+car838402429690 - dep: 47, arr: 47, time: 0
 route: []
 history: ['s36']
 
-car47147635775312358 - dep: 0, arr: 75, time: 75
-route: []
-history: ['s96']
-
-car1209051100513758 - dep: 0, arr: 76, time: 76
-route: []
-history: ['s54']
-
-car43816687677716402 - dep: 0, arr: 77, time: 77
-route: []
-history: ['s89']
-
-car6226617190648747 - dep: 0, arr: 78, time: 78
+car302741314405 - dep: 48, arr: 48, time: 0
 route: []
 history: ['s85']
 
-car89360921440695070 - dep: 0, arr: 79, time: 79
-route: []
-history: ['s63']
-
-car98974580732056217 - dep: 0, arr: 80, time: 80
+car110314226327 - dep: 49, arr: 49, time: 0
 route: []
 history: ['s41']
 
-car70494568855730326 - dep: 0, arr: 81, time: 81
-route: []
-history: ['s89']
-
-car83613307322318601 - dep: 0, arr: 82, time: 82
-route: []
-history: ['s56']
-
-car20097999724515754 - dep: 0, arr: 83, time: 83
-route: []
-history: ['s52']
-
-car74713211081301509 - dep: 0, arr: 84, time: 84
-route: []
-history: ['s32']
-
-car8235803631023897 - dep: 0, arr: 85, time: 85
-route: []
-history: ['s32']
-
-car47714275485058812 - dep: 0, arr: 86, time: 86
-route: []
-history: ['s36']
-
-car57010927515650801 - dep: 0, arr: 87, time: 87
-route: []
-history: ['s65']
-
-car25261233462097278 - dep: 0, arr: 88, time: 88
-route: []
-history: ['s54']
-
-car44693285651091007 - dep: 0, arr: 89, time: 89
-route: []
-history: ['s47']
-
-car34762430346430226 - dep: 0, arr: 90, time: 90
-route: []
-history: ['s63']
-
-car67438359909211179 - dep: 0, arr: 91, time: 91
-route: []
-history: ['s23']
-
-car86910773986209924 - dep: 0, arr: 92, time: 92
-route: []
-history: ['s58']
-
-car96893972553540913 - dep: 0, arr: 93, time: 93
-route: []
-history: ['s47']
-
-car50521447090910765 - dep: 0, arr: 94, time: 94
-route: []
-history: ['s78']
-
-car59235733002203440 - dep: 0, arr: 95, time: 95
-route: []
-history: ['s41']
-
-car90675928874048717 - dep: 0, arr: 96, time: 96
-route: []
-history: ['s54']
-
-car44935134659590389 - dep: 0, arr: 97, time: 97
+car935144365100 - dep: 50, arr: 50, time: 0
 route: []
 history: ['s87']
 
-car51152636825793694 - dep: 0, arr: 98, time: 98
+car730065730727 - dep: 51, arr: 51, time: 0
+route: []
+history: ['s25']
+
+car875372340337 - dep: 52, arr: 52, time: 0
+route: []
+history: ['s14']
+
+car921706180549 - dep: 53, arr: 53, time: 0
 route: []
 history: ['s54']
 
-car20057007461987634 - dep: 0, arr: 99, time: 99
+car196027932517 - dep: 54, arr: 54, time: 0
+route: []
+history: ['s52']
+
+car967678552840 - dep: 55, arr: 55, time: 0
+route: []
+history: ['s89']
+
+car209458712449 - dep: 56, arr: 56, time: 0
+route: []
+history: ['s69']
+
+car381105889194 - dep: 57, arr: 57, time: 0
 route: []
 history: ['s56']
+
+car665566392987 - dep: 58, arr: 58, time: 0
+route: []
+history: ['s96']
+
+car997707362702 - dep: 59, arr: 59, time: 0
+route: []
+history: ['s69']
+
+car159950043452 - dep: 60, arr: 60, time: 0
+route: []
+history: ['s89']
+
+car473400288863 - dep: 61, arr: 61, time: 0
+route: []
+history: ['s87']
+
+car543491812200 - dep: 62, arr: 62, time: 0
+route: []
+history: ['s47']
+
+car794924717211 - dep: 63, arr: 63, time: 0
+route: []
+history: ['s87']
+
+car855249221788 - dep: 64, arr: 64, time: 0
+route: []
+history: ['s58']
+
+car615691584786 - dep: 65, arr: 65, time: 0
+route: []
+history: ['s74']
+
+car625119011748 - dep: 66, arr: 66, time: 0
+route: []
+history: ['s89']
+
+car53503059782 - dep: 67, arr: 67, time: 0
+route: []
+history: ['s78']
+
+car183259603907 - dep: 68, arr: 68, time: 0
+route: []
+history: ['s89']
+
+car640866242681 - dep: 69, arr: 69, time: 0
+route: []
+history: ['s32']
+
+car516963658224 - dep: 70, arr: 70, time: 0
+route: []
+history: ['s41']
+
+car622602853603 - dep: 71, arr: 71, time: 0
+route: []
+history: ['s87']
+
+car921811084323 - dep: 72, arr: 72, time: 0
+route: []
+history: ['s65']
+
+car960916731343 - dep: 73, arr: 73, time: 0
+route: []
+history: ['s56']
+
+car935997433840 - dep: 74, arr: 74, time: 0
+route: []
+history: ['s56']
+
+car846606841815 - dep: 75, arr: 75, time: 0
+route: []
+history: ['s58']
+
+car831853962871 - dep: 76, arr: 76, time: 0
+route: []
+history: ['s58']
+
+car630907864643 - dep: 77, arr: 77, time: 0
+route: []
+history: ['s45']
+
+car934800507789 - dep: 78, arr: 78, time: 0
+route: []
+history: ['s12']
+
+car615106217734 - dep: 79, arr: 79, time: 0
+route: []
+history: ['s23']
+
+car885527148756 - dep: 80, arr: 80, time: 0
+route: []
+history: ['s14']
+
+car687566774794 - dep: 81, arr: 81, time: 0
+route: []
+history: ['s52']
+
+car485383987044 - dep: 82, arr: 82, time: 0
+route: []
+history: ['s36']
+
+car360358807128 - dep: 83, arr: 83, time: 0
+route: []
+history: ['s87']
+
+car397049046370 - dep: 84, arr: 84, time: 0
+route: []
+history: ['s56']
+
+car256465292533 - dep: 85, arr: 85, time: 0
+route: []
+history: ['s54']
+
+car4029485118 - dep: 86, arr: 86, time: 0
+route: []
+history: ['s36']
+
+car323206789913 - dep: 87, arr: 87, time: 0
+route: []
+history: ['s65']
+
+car769301827527 - dep: 88, arr: 88, time: 0
+route: []
+history: ['s63']
+
+car739404638125 - dep: 89, arr: 89, time: 0
+route: []
+history: ['s12']
+
+car795692611819 - dep: 90, arr: 90, time: 0
+route: []
+history: ['s41']
+
+car153911349380 - dep: 91, arr: 91, time: 0
+route: []
+history: ['s23']
+
+car752573008696 - dep: 92, arr: 92, time: 0
+route: []
+history: ['s65']
+
+car401000234738 - dep: 93, arr: 93, time: 0
+route: []
+history: ['s58']
+
+car549870066342 - dep: 94, arr: 94, time: 0
+route: []
+history: ['s87']
+
+car262437594990 - dep: 95, arr: 95, time: 0
+route: []
+history: ['s85']
+
+car473320089449 - dep: 96, arr: 96, time: 0
+route: []
+history: ['s52']
+
+car36934215211 - dep: 97, arr: 97, time: 0
+route: []
+history: ['s58']
+
+car862591978497 - dep: 98, arr: 98, time: 0
+route: []
+history: ['s52']
+
+car220961543224 - dep: 99, arr: 99, time: 0
+route: []
+history: ['s45']
 

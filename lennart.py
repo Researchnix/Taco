@@ -30,7 +30,7 @@ if __name__ == "__main__":
     karte.show()
 
     for i in range(100):
-        karte.spawnRandomCar()
+        karte.spawnRandomCar(timer.get())
         karte.update()
         tran.streetTransmit(karte.intersections, karte.streets)
         tran.intersectionTransmit(karte.intersections)
