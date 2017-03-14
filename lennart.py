@@ -20,25 +20,25 @@ import Timer
 
 if __name__ == "__main__":
     t = time.time()
-
     timer = Timer.Timer()
     keeper = BookKeeper.BookKeeper("log.txt", timer)
-
-    f = FourWay.FourWay("id", 1, 2)
-    car = Car.Car("a", "s36", "s78", 3)
-    r = Street.Street("r", 10)
-
-
     karte = Map.Map("test1_street", "test1_inter", keeper)
-    karte.show()
+
+    print "map initialized"
 
     tran = Transmitter.Transmitter(karte.intersections, karte.streets)
-    tran.streetTransmit(karte.intersections, karte.streets)
-    tran.intersectionTransmit(karte.intersections)
+    karte.show()
 
-    print "\n\n\n"
-    exFW = karte.intersections.values()[0]
-    print exFW.trali
+    for i in range(100):
+        karte.spawnRandomCar(timer.get())
+        karte.update()
+        tran.streetTransmit(karte.intersections, karte.streets)
+        tran.intersectionTransmit(karte.intersections)
+        timer.increment()
+        print "\n"
+
+
+
     
 
 

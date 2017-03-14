@@ -50,8 +50,8 @@ class Map:
     def update(self):
         for street in self.streets.values():
             street.update()
-        #for inter in self.intersections.values():
-        #    inter.timeStep(0)
+        for inter in self.intersections.values():
+            inter.update()
 
     def show(self):
         for i in sorted(self.intersections.values()):
@@ -63,11 +63,13 @@ class Map:
         return target.queueCar(car)
 
     # Spawns a car with random route at a random street
-    def spawnRandomCar(self):
+    def spawnRandomCar(self, time):
        street1 = self.streets.values()[randint(0,len(self.streets.values())-1)]
+       print street1.ID
        street2 = self.streets.values()[randint(0,len(self.streets.values())-1)]
-       name = "car" + str(randint(0,99999999999999999))
-       car = Car.Car(name, street1.ID, street2.ID)
+       print street2.ID
+       name = "car" + str(randint(0,999999999999))
+       car = Car.Car(name, street1.ID, street2.ID, time)
        street1.queueCar(car)
 
     def spawnDummyCar(self):
